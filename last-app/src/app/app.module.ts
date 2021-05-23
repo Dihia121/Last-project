@@ -13,6 +13,9 @@ import { SigninComponent } from './components/auth/signin/signin.component';
 import { SignupComponent } from './components/auth/signup/signup.component';
 import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
 import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import {MatButtonModule} from '@angular/material/button';
+import { HomeComponent } from './components/partials/home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +28,14 @@ import { ForgotPasswordComponent } from './components/auth/forgot-password/forgo
     SigninComponent,
     SignupComponent,
     ResetPasswordComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
